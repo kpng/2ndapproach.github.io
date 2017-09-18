@@ -1,0 +1,276 @@
+
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+}
+
+strong { font-weight: 700; }
+
+a, a:hover, a:focus {
+	color: #42bfc2;
+	text-decoration: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+h2 {
+	margin-top: 10px;
+	font-size: 42px;
+    font-weight: 100;
+    line-height: 54px;
+}
+
+img { max-device-width: 100%; }
+
+::-moz-selection { background: #42bfc2; color: #fff; text-shadow: none; }
+::selection { background: #42bfc2; color: #fff; text-shadow: none; }
+
+
+/***** Coming Soon *****/
+
+.coming-soon {
+    margin: 0 auto;
+}
+
+.inner-bg {
+    padding: 75px 0 40px 0;
+}
+
+.coming-soon .logo {
+	padding-bottom: 20px;
+}
+
+.coming-soon .logo h1 {
+	margin: 0;
+}
+
+.coming-soon .logo a {
+	display: inline-block;
+	width: 200px;
+	height: 110px;
+	background: url(../img/logo.png) center center no-repeat;
+	text-indent: -99999px;
+}
+.coming-soon .logo a:focus { outline: 0; }
+
+.coming-soon .logo a:hover { background-image: url(../img/logo-hover.png); }
+
+.coming-soon .logo a:before {
+	content: url(../img/logo-hover.png);
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.coming-soon p {
+	margin: 60px 0 10px 0;
+	padding: 0 120px;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.timer {
+    margin-top: 60px;
+}
+
+.timer .days-wrapper,
+.timer .hours-wrapper,
+.timer .minutes-wrapper,
+.timer .seconds-wrapper {
+    display: inline-block;
+    width: 160px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.timer .days,
+.timer .hours,
+.timer .minutes,
+.timer .seconds {
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 90px;
+}
+
+.subscribe {
+	margin-top: 60px;
+}
+
+.subscribe form input {
+    width: 362px;
+    height: 52px;
+}
+
+.success-message, .error-message {
+	margin-top: 20px;
+	font-size: 18px;
+    line-height: 32px;
+}
+
+
+/***** Footer *****/
+
+footer {
+	margin-top: 60px;
+	padding: 20px 0 15px 0;
+	background: #3d3d3d;
+	background: rgba(200, 200, 200, 1);
+}
+
+.footer-copyright p {
+	margin: 0;
+	font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    text-align: left;
+}
+
+.footer-copyright a { color: #fff; border-bottom: 1px dotted #fff; }
+.footer-copyright a:hover { color: #fff; border: 0; }
+
+.footer-social {
+	text-align: right;
+}
+
+/* social icons */
+.social-icon {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin: 5px;
+	background: center center no-repeat;
+}
+
+.social-icon.facebook { background-image: url(../img/social-icons/facebook.png); }
+.social-icon.linkedin { background-image: url(../img/social-icons/linkedin.png); }
+.social-icon.twitter { background-image: url(../img/social-icons/twitter.png); }
+.social-icon.dribbble { background-image: url(../img/social-icons/dribbble.png); }
+.social-icon.google-plus { background-image: url(../img/social-icons/google-plus.png); }
+
+
+.carousel-inner{
+//    height: 500px;
+    
+}
+
+/* filt the img to fit width, hard code the height */
+.item img{
+    object-fit:cover;
+    height:400px !important;
+    width: auto;
+}
+
+/* navbar */
+.navbar-default{
+    background:transparent;
+    border-color:transparent;
+}
+
+/* navbar font color */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+/*Sets the text hover color on navbar*/
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #FF0;  
+}
+
+/* Sets h2 background */
+h2{
+    background-color: yellowgreen;
+}
+
+/* */
+body {
+    position: relative;
+}
+
+/* Sets color of clickable link */
+a:link {
+    color:white;
+}
+
+/* for the graphics in the About Us section */
+div.aboutpix {
+    /*border: 1px solid #ccc;*/
+}
+
+div.aboutpix: hover {
+    border: 1px solid #f00;
+}
+
+div.aboutpix img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 1px;
+    text-align: left;
+}
+
+* {
+    box-sizing; border-box;
+}
+
+.responsive {
+    padding: 0 0 0 0px;
+    float: left;
+    width: 25%;
+    border: 8px solid gray;
+    background-color: white;
+
+}
+
+p.svcs {
+    padding: 0;
+    
+    font-family: "Tahoma", Geneva, sans-serif;
+    font-size: 150%;
+    color: royalblue;
+    /*background-color: yellow;*/
+    text-align: justify;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (min-width: 415px){
+    .responsive {
+        width: 33.33%;
+/*        margin: 6px 0;*/
+    }
+
+    p.svcs {
+        width: 100%;
+        color: black;
+    }
+    
+}
+
+@media only screen and (max-width: 414px) {
+    .responsive {
+        width: 100%;
+    }
+
+    p.svcs {
+        width: 100%;
+        color: black;
+    }
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
