@@ -293,9 +293,16 @@ p.svcs {
 .my-cards-headers{
     border-style: inset;
     background-color: #B1B1B1;
-    color: #6E6E6E;
+    /*color: #6E6E6E;*/
+    color: white;
+    text-shadow: 3px 2px 3px black;
+    letter-spacing: 3px;
 }
 
 .my-cards-text{
     color: #555555;
+}
+
+.my-cards-text-justify{
+    text-align: justify;    
 }

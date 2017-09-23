@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/form-elements.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -21,234 +22,331 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/2ndApproach-favicon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/2ndApproach-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/2ndApproach-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/2ndApproach-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/2ndApproach-touch-icon-57-precomposed.png">
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/2ndApproach-favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/2ndApproach-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/2ndApproach-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/2ndApproach-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/2ndApproach-touch-icon-57-precomposed.png">
 
 
-        <!-- javascript to validate email address field -->
-        <script>
-            function SubscribeNow(){
-                var x = document.forms[0].email.value;
+    <!-- javascript to validate email address field -->
+    <script>
+        function SubscribeNow() {
+            var x = document.forms[0].email.value;
 
-                if (x==""){
-                    alert("Please input email");
-                }
-                else
-                {
-                    alert("Thank you, we will send our newsletter to "+x);
-                    document.forms[0].reset();
-                }
+            if (x == "") {
+                alert("Please input email");
+            } else {
+                alert("Thank you, we will send our newsletter to " + x);
+                document.forms[0].reset();
             }
-        </script>
-        
-    </head>
+        }
+    </script>
 
-    <body>
+</head>
 
-<!-- The navigation bar on top -->
+<body>
+
+    <!-- The navigation bar on top -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="sr-only">Toggle nav</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    
-                    <a class="navbar-brand" href="#myCarousel">
+
+                <a class="navbar-brand" href="#myCarousel">
                         <img alt="2ndApproach" src="assets/img/2ndApproach-logo-256.png" style="height:100%;">                            </a>
-                </div>
-                
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <!--
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!--
                         <li><a href="#"><span class="glyphicon glyphicon-heart"></span> </a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-usd"></span> </a></li>
                          -->
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#about"><span class="material-icons" style="font-size:18px;color:lightblue;text-shadow:2px 2px 4px #000000;">info</span> About</a></li>
-                        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact"><span class="material-icons" style="font-size:18px;color:lightblue;text-shadow:2px 2px 4px #000000;">email</span> Contact</a></li>
-                    </ul>
-                </div>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#about"><span class="material-icons" style="font-size:18px;color:lightblue;text-shadow:2px 2px 4px #000000;">info</span> About</a></li>
+                    <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact"><span class="material-icons" style="font-size:18px;color:lightblue;text-shadow:2px 2px 4px #000000;">email</span> Contact</a></li>
+                </ul>
             </div>
-        </nav>
-<!-- End of The navigation bar on top -->
-    
-<!-- Our carousel -->
-        <div class="container-fluid">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                
-                <!-- wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    
-                    <div class="item active">
-                        <img src="assets/img/mrm.jpg" alt="Member Relationship Management" class="img-responsive">
-                        <div class="carousel-caption">
-                            <i class="fa fa-group" style="font-size:48px;color:white;text-shadow:2px 8px 2px #000000;"></i>
-                            <h3>Member Relationship Management</h3>
-                            <p>Every member deserves a unique engagement experience</p>
-                            <button type="button" class="btn btn-primary btn-lg">
+        </div>
+    </nav>
+    <!-- End of The navigation bar on top -->
+
+    <!-- Our carousel -->
+    <div class="container-fluid">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <img src="assets/img/mrm.jpg" alt="Member Relationship Management" class="img-responsive">
+                    <div class="carousel-caption">
+                        <i class="fa fa-group" style="font-size:48px;color:white;text-shadow:2px 8px 2px #000000;"></i>
+                        <h3>Member Relationship Management</h3>
+                        <p>Every member deserves a unique engagement experience</p>
+                        <button type="button" class="btn btn-primary btn-lg">
                                 <a href="mailto:explore@2ndapproach.com.sg?cc=&bcc=&subject=Request%20for%20product%20information%20on%20Member%20Relationship%20Management&body=Please%20send%20me%20the%20product%20brochure%20for%20Member%20Relationship%20Management." target="_blank">
                                 Find out more
                                 </a>
                             </button>
-                            <br><br>
-                        </div>
+                        <br><br>
                     </div>
-                    
-                    <div class="item">
-                        <img src="assets/img/lecture.png" alt="Student Management System" class="img-responsive">
-                            <div class="carousel-caption">
-                            <span class="material-icons" style="font-size:68px;color:white;text-shadow:2px 8px 2px #000000;">school</span>
-                                <h3>Student Management System</h3>
-                                <p>Run your school like a well-oiled machine</p>
-                                <button type="button" class="btn btn-success btn-lg">
+                </div>
+
+                <div class="item">
+                    <img src="assets/img/lecture.png" alt="Student Management System" class="img-responsive">
+                    <div class="carousel-caption">
+                        <span class="material-icons" style="font-size:68px;color:white;text-shadow:2px 8px 2px #000000;">school</span>
+                        <h3>Student Management System</h3>
+                        <p>Run your school like a well-oiled machine</p>
+                        <button type="button" class="btn btn-success btn-lg">
                                     <a href="mailto:explore@2ndapproach.com.sg?cc=&bcc=&subject=Request%20for%20product%20information%20on%20Student%20Management%20System&body=Please%20send%20me%20the%20product%20brochure%20for%20Student%20Management%20System." target="_blank">
                                     Find out more
                                     </a>
                                 </button>
-                                <br><br>
-                            </div>
+                        <br><br>
                     </div>
-                    
-                    <div class="item">
-                        <img src="assets/img/hero-3.jpg" alt="Custom solution development" class="img-responsive">
-                            <div class="carousel-caption">
-                                <i class="fa fa-code" style="font-size:68px;color:white;text-shadow:2px 8px 2px #000000;"></i>
-                                <h3>Custom solution development</h3>
-                                <p>Delivering your desired business outcome</p>
-                                <button type="button" class="btn btn-info btn-lg">
+                </div>
+
+                <div class="item">
+                    <img src="assets/img/hero-3.jpg" alt="Custom solution development" class="img-responsive">
+                    <div class="carousel-caption">
+                        <i class="fa fa-code" style="font-size:68px;color:white;text-shadow:2px 8px 2px #000000;"></i>
+                        <h3>Custom solution development</h3>
+                        <p>Delivering your desired business outcome</p>
+                        <button type="button" class="btn btn-info btn-lg">
                                     <a href="mailto:explore@2ndapproach.com.sg?cc=&bcc=&subject=Request%20for%20custom%20solution%20development&body=Please%20send%20me%20information%20on%20your%20custom%20solution%20development%20service." target="_blank">
                                     Find out more
                                     </a>
                                 </button>
-                                <br><br>
-                            </div>
+                        <br><br>
                     </div>
+                </div>
 
-                </div> <!-- class-"carousel-inner" -->
-                
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            </div>
+            <!-- class-"carousel-inner" -->
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" style="font-size:38px;color:white;text-shadow:2px 8px 2px #000000;"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right" style="font-size:38px;color:white;text-shadow:2px 8px 2px #000000;"></span>
                     <span class="sr-only">Next</span>
                 </a>
-                
-            </div> <!-- id="myCarousel" -->
-        </div> <!-- class="container" -->
-<!-- End of Our carousel -->
+
+        </div>
+        <!-- id="myCarousel" -->
+    </div>
+    <!-- class="container" -->
+    <!-- End of Our carousel -->
 
 
 
 
-        <!-- Coming Soon -->
-        <div class="coming-soon wow fadeInLeftBig">
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 my-cards">
-                            <div id="about">  
+    <!-- Coming Soon -->
+    <div class="coming-soon wow fadeInLeftBig">
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 my-cards">
+                        <div id="about">
                             <h2 class="my-cards-headers">About Us</h2>
-                            </div> <!-- end of id="about" -->
-                            <div class="my-cards-text">
-                                <h3>Our services</h3>
-                            	<h4>
-                                    We develop software solutions that work seamlessly across platforms,<br>
-                                    so that your teams can collaborate on the same information.<br><br>
-                                </h4>
-                                <br><br><br><br><br>
+                        </div>
+                        <!-- end of id="about" -->
+                        <div class="my-cards-text">
+                            <h3>Our services</h3>
+                            <h4 class="my-cards-text-justify">
+                                We understand that tools are designed for their specific purposes. Therefore our focus is to develop software solutions that
+                                work seamlessly across platforms, so that teams can collaborate effectively while working
+                                hard in their respective roles.<br><br>
+                            </h4>
+                            <br><br><br><br><br>
 
-                                <div class="responsive">
-                                    <div class="aboutpix">
-                                        <a target="_blank">
+                            <div class="responsive">
+                                <div class="aboutpix">
+                                    <a target="_blank">
                                             <i class="material-icons about-icons" style="font-size:80px; color:darkgray">phone_iphone</i>
                                         </a>
-                                        <p class="svcs">
-                                            Get instantaneous updates from the iOS mobile device users.</p>
-                                    </div>
+                                    <p class="svcs my-cards-text my-cards-text-justify">
+                                        Mobile devices such as phones and tablets are great for data capture. Popular use cases are using the built-in camera to
+                                        scan barcodes and QR codes; getting the location data; data entry via tab and swipe
+                                        gestures. Updates from the iOS mobile device users can be captured to the central
+                                        database and made available instantaneously.
+                                    </p>
                                 </div>
+                            </div>
 
 
-                                <div class="responsive">
-                                    <div class="aboutpix">
-                                        <a target="_blank">
+                            <div class="responsive">
+                                <div class="aboutpix">
+                                    <a target="_blank">
                                                 <i class="material-icons about-icons" style="font-size:100px; color:darkgray">laptop</i>
                                             </a>
-                                        <p class="svcs">
-                                            Get more done on the Mac and Windows desktops.</p>
-                                    </div>
+                                    <p class="svcs">
+                                        Get more done on the Mac and Windows desktops.
+                                    </p>
                                 </div>
+                            </div>
 
 
-                                <div class="responsive">
-                                    <div class="aboutpix">
-                                        <a target="_blank">
+                            <div class="responsive">
+                                <div class="aboutpix">
+                                    <a target="_blank">
                                                 <i class="material-icons about-icons" style="font-size:100px; color:darkgray">open_in_browser</i>
                                             </a>
-                                        <p class="svcs">
-                                            Accessible from most web browsers.</p>
-                                    </div>
+                                    <p class="svcs">
+                                        Accessible from most web browsers.</p>
                                 </div>
+                            </div>
 
-                                <div class="clearfix"></div>
-                                
- 
-                            </div> <!-- end of wow fadeInLeftBig -->
-                            
-                            
-                        </div> <!-- end of class="col-sm-12" -->
-                    </div> <!-- end of class="row" -->
-                </div> <!-- end of class="container" -->
+                            <div class="clearfix"></div>
 
-<br><br>
 
-<div class="container wow fadeInRightBig">
-<div class="row">
-<div class="col-sm-12 my-cards">
-        <div id="contact" >
-            <h2 class="my-cards-headers">Contact Us</h2>
-            <p>
-            Ask for a free assessment <br>
-            on your organization's digital transformation! <br><br>
-            
-            <i class="material-icons" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;">contact_phone</i><br>
-            <button type="button" class="btn btn-info btn-lg">
+                        </div>
+                        <!-- end of wow fadeInLeftBig -->
+
+
+                    </div>
+                    <!-- end of class="col-sm-12" -->
+                </div>
+                <!-- end of class="row" -->
+            </div>
+            <!-- end of class="container" -->
+
+            <br><br>
+
+            <div class="w3-row-padding">
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-center w3-hover->shadow>
+                        <li class="w3-black w3-xlarge w3-padding-32>Mobile</li>
+                        <li class="w3-padding-16"><b>iOS devices</b></li>
+                        <li class="w3-padding-16">Mobile devices such as phones and tablets are great for data capture. Popular use cases are using the built-in camera to
+                                scan barcodes and QR codes; getting the location data; data entry via tab and swipe
+                                gestures. Updates from the iOS mobile device users can be captured to the central
+                                database and made available instantaneously.</li>
+                    </ul>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-center w3-hover->shadow>
+                        <li class="w3-red w3-xlarge w3-padding-32>Desktop</li>  
+                        <li class="w3-padding-16"><b>Mac</b></li>
+                        <li class="w3-padding-16"><b>Windows</b></li>  
+                    </ul>                     
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-center w3-hover->shadow>
+                        <li class="w3-blue w3-xlarge w3-padding-32>Browsers</li>  
+                        <li class="w3-padding-16"><b>Safari</b></li>
+                        <li class="w3-padding-16"><b>Chrome</b></li> 
+                    </ul>                      
+                </div>    
+            </div>
+
+            <br>
+            <div class="w3-row-padding">
+                    
+                    <div class="w3-third w3-margin-bottom">
+                      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+                        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+                        <li class="w3-padding-16"><b>10</b> Emails</li>
+                        <li class="w3-padding-16"><b>10</b> Domains</li>
+                        <li class="w3-padding-16"><b>Endless</b> Support</li>
+                        <li class="w3-padding-16">
+                          <h2 class="w3-wide">$ 10</h2>
+                          <span class="w3-opacity">per month</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div class="w3-third w3-margin-bottom">
+                      
+                      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                        <li class="w3-green w3-xlarge w3-padding-32">Pro</li>
+                        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+                        <li class="w3-padding-16"><b>25</b> Emails</li>
+                        <li class="w3-padding-16"><b>25</b> Domains</li>
+                        <li class="w3-padding-16"><b>Endless</b> Support</li>
+                        <li class="w3-padding-16">
+                          <h2 class="w3-wide">$ 25</h2>
+                          <span class="w3-opacity">per month</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div class="w3-third w3-margin-bottom">
+                      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+                        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+                        <li class="w3-padding-16"><b>50</b> Emails</li>
+                        <li class="w3-padding-16"><b>50</b> Domains</li>
+                        <li class="w3-padding-16"><b>Endless</b> Support</li>
+                        <li class="w3-padding-16">
+                          <h2 class="w3-wide">$ 50</h2>
+                          <span class="w3-opacity">per month</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                          <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    
+
+            <div class="container wow fadeInRightBig">
+                <div class="row">
+                    <div class="col-sm-12 my-cards">
+                        <div id="contact">
+                            <h2 class="my-cards-headers">Contact Us</h2>
+                            <p>
+                                Ask for a free assessment <br> on your organization's digital transformation! <br><br>
+
+                                <i class="material-icons" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;">contact_phone</i><br>
+                                <button type="button" class="btn btn-info btn-lg">
                 <a href="tel:+6568093884">(65) 68093884</a> <br></button><br><br><br><br>
-            
-            <i class="material-icons" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;">contact_mail</i><br>
-            <button type="button" class="btn btn-warning btn-lg">
+
+                                <i class="material-icons" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;">contact_mail</i><br>
+                                <button type="button" class="btn btn-warning btn-lg">
             <a href="mailto:explore@2ndapproach.com.sg" target="_blank">explore@2ndapproach.com.sg</a>
             </button>
-            </p>
-        </div>
-</div>
-</div>
-</div>
-        <!--
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
         <div class="subscribe wow fadeInUpBig">
             <form class="form-inline" onsubmit="SubscribeNow()">
                 <input type="email" id="email"  placeholder="Enter your email.." class="subscribe-email">
@@ -261,19 +359,19 @@
             <p id="demo"></p>
         </div>
         -->
-        
+
+        </div>
     </div>
-</div>
 
 
 
-  
-    </body>
-    
-        <!-- Footer -->
-        <footer class="footer text-center">
-	        <div class="container">
-                    <small>
+
+</body>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <small>
                         <div class="wow fadeInUp">
                         <img alt="Email" src="assets/img/2ndApproach-logo-256.png" style="height: 40px; margin-bottom: 0px;"><br>
                         2nd Approach Methodology Pte. Ltd. <br>
