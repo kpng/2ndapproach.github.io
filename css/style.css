@@ -62,6 +62,10 @@
     background-size: cover;
 }
 
+.card-text-justify{
+    text-align: justify;
+}
+
 .footer {
     position: scroll;
     left: 0;
