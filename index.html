@@ -19,16 +19,65 @@
     <!-- W3.CSS is a modern CSS framework with built-in responsiveness     -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <!-- our css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/png" href="ico/2ndApproach-favicon.png" sizes="16x16">
 </head>
 
 <body>
-    <div class="container-fluid" style="background-color:lightcyan;color:#fff;height:300px;">
+    <!-- <div class="container-fluid" style="background-color:lightcyan;color:#fff;height:480px;"> -->
+    <div class="container-fluid" style="background-color:white;">
 
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active parallax-carousel-1">
+                    <div class="carousel-caption">
+                        <h3>Member Relationship Management</h3>
+                        <p>Every member deserves a unique engagement experience</p>
+                    </div>
+                </div>
+
+                <div class="item parallax-carousel-2">
+                    <div class="carousel-caption">
+                        <h3>Student Management System</h3>
+                        <p>Run your school like a well-oiled machine</p>
+                    </div>
+                </div>
+
+                <div class="item parallax-carousel-3">
+                    <div class="carousel-caption">
+                        <h3>Custom solution development</h3>
+                        <p>Delivering your desired business outcome</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 
-    
-    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="480">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -59,8 +108,6 @@
             </div>
         </div>
     </nav>
-
-
 
     <div class="w3-row-padding">
 
@@ -118,6 +165,7 @@
 
     </div>
 
+    <!-- to be deleted -->
     <div class="container-fluid" style="height:1000px">
         <h1>Some text to enable scrolling</h1>
         <h1>Some text to enable scrolling</h1>
@@ -132,6 +180,12 @@
         <h1>Some text to enable scrolling</h1>
     </div>
 
+    <div class="footer">
+        <p><hr>
+            2nd Approach Methodology Pte. Ltd. <br>137 Market Street #06-00 Singapore 048943<br><hr></p>
+    </div>
 </body>
+
+
 
 </html>

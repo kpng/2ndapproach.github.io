@@ -19,3 +19,55 @@
 .affix + .container-fluid {
     padding-top: 95px;
 }
+
+.parallax-carousel-1 { 
+    /* The image used */
+    background-image: url("../img/mrm.jpg");
+
+    /* Set a specific height */
+    height: 480px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-carousel-2 { 
+    /* The image used */
+    background-image: url("../img/lecture.png");
+
+    /* Set a specific height */
+    height: 480px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-carousel-3 { 
+    /* The image used */
+    background-image: url("../img/customapp.jpg");
+
+    /* Set a specific height */
+    height: 480px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    position: scroll;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+ }
