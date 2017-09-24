@@ -3,30 +3,32 @@
     width: 100%;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    background-color: #F44336;
-    border-color: #F44336;
-
+    background-color: gray;
+    border-color: gray;
 }
+
 .affix a {
-    color: #fff !important;
+    color: yellow !important;
     padding: 15px !important;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
+
 .affix-top a {
     padding: 25px !important;
 }
-.affix + .container-fluid {
+
+.affix+.container-fluid {
     padding-top: 95px;
 }
 
-.parallax-carousel-1 { 
+
+
+.parallax-carousel-1 {
     /* The image used */
     background-image: url("../img/mrm.jpg");
-
     /* Set a specific height */
-    height: 480px; 
-
+    height: 480px;
     /* Create the parallax scrolling effect */
     background-attachment: scroll;
     background-position: center;
@@ -34,13 +36,11 @@
     background-size: cover;
 }
 
-.parallax-carousel-2 { 
+.parallax-carousel-2 {
     /* The image used */
     background-image: url("../img/lecture.png");
-
     /* Set a specific height */
-    height: 480px; 
-
+    height: 480px;
     /* Create the parallax scrolling effect */
     background-attachment: scroll;
     background-position: center;
@@ -48,13 +48,11 @@
     background-size: cover;
 }
 
-.parallax-carousel-3 { 
+.parallax-carousel-3 {
     /* The image used */
     background-image: url("../img/customapp.jpg");
-
     /* Set a specific height */
-    height: 480px; 
-
+    height: 480px;
     /* Create the parallax scrolling effect */
     background-attachment: scroll;
     background-position: center;
@@ -62,9 +60,12 @@
     background-size: cover;
 }
 
-.card-text-justify{
+.card-text-justify {
     text-align: justify;
 }
+
+
+
 
 .footer {
     position: scroll;
@@ -74,4 +75,4 @@
     background-color: gray;
     color: white;
     text-align: center;
- }
+}
