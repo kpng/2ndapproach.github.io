@@ -64,15 +64,31 @@
     text-align: justify;
 }
 
+img{
+    display: block;
+    margin: auto;
+}
 
+.my-w3card{
+    box-shadow: 5px 5px 5px #888888;
+}
 
+body, html {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
 
 .footer {
     position: scroll;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: gray;
-    color: white;
-    text-align: center;
+    background-color: lightgray;
+    color: #888888;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 500;
 }
