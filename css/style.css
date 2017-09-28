@@ -81,14 +81,30 @@ section {
     min-height: 100%;
 }
 
+.myServices{
+}
+
+
 .footer {
     position: scroll;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: lightgray;
-    color: #888888;
+    color: white;
     text-align: left;
     padding-left: 10px;
-    font-weight: 500;
+}
+
+.myfooter-text-h1{
+    font-size: 1.3em;
+    font-weight: 600;
+    text-shadow: 1.5px 1.5px 3px black;
+}
+
+.myfooter-text-h2{
+    font-weight: bold;
+
+    color: #666666;
+    text-shadow: 1.5px 1.5px 3px white;
 }
