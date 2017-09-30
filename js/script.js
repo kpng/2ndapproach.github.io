@@ -14,13 +14,25 @@ $(document).ready(function () {
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function () {
+            }, 488, function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             });
         } // End if
     });
-}); 
+});
 
+/*
 
+    We are using the following attributes on anchors in order to collapse the responsive menu when an item is clicked:
+    
+        data-toggle="collapse"
+        data-target=".in"
+
+*/
+$(document).ready(function () {
+    $("nav").find("li").on("click", "a", function () {
+        $('.navbar-collapse.in').collapse('hide');
+    });
+});

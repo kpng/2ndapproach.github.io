@@ -12,7 +12,7 @@
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -114,7 +114,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#myCarousel">Home</a></li>
+                    <li class="active"><a data-toggle="collapse" data-target=".in" href="#myCarousel">Home</a></li>
                     <li><a href="#Services">Services</a></li>
                     <li><a href="#Expertise">Expertise</a></li>
                     <li><a href="#Contact">Contact</a></li>
@@ -222,7 +222,7 @@
         <h2>EXPERTISE</h2>
         <h4>What we offer</h4>
         <br>
-            
+
     </div>
 
     <div class="footer" id="Contact">
@@ -252,22 +252,24 @@
                 </p>
             </div>
             <div class="col-sm-7">
-                <div class="row">
-                    <div class="col-sm-12 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                <form action="https://script.google.com/macros/u/0/s/AKfycbxjqOY0Ki5LIFoT87uCF49aFV_PuWuP6xFaX7PiD5sYUfr9Umo/exec" method="post">
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 form-group">
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
                     </div>
-                </div>
-                <textarea class="form-control" id="comments" name="comments" placeholder="Leave us a message" rows="5"></textarea><br>
-                <div class="row">
-                    <div class="col-sm-12 form-group">
-                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Leave us a message" rows="5"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Send</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 
