@@ -10,6 +10,9 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -118,7 +121,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#" data-toggle="modal" data-target="#myModal"><span class="material-icons" style="font-size:16px">mail</span> Subscribe</a>
+                        <a href="#"><span class="glyphicon glyphicon-log-in"></span> Subscribe</a>
                     </li>
                     <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
                 </ul>
@@ -128,6 +131,7 @@
 
     <!-- Container (Services Section) -->
     <div class="container-fluid text-center myServices" id="Services">
+        <br><br>
         <h2>SERVICES</h2>
         <h4>What we offer</h4>
         <br>
@@ -213,32 +217,69 @@
 
     </div>
 
+    <div id="Expertise" class="container-fluid text-center bg-grey">
+        <br><br>
+        <h2>EXPERTISE</h2>
+        <h4>What we offer</h4>
+        <br>
+            
+    </div>
 
     <div class="footer" id="Contact">
         <br>
-        <a href="#myCarousel">
-                <img alt="2ndApproach" src="img/2ndApproach-logo-256.png" style="height:40px;margin-left: 0px;">                            </a>
-        </a>
-        <p class=myfooter-text-h1>
-            <b>2nd Approach Methodology Pte. Ltd. </b><br>
-        </p>
+        <h2 class="text-center mySectionHeader">CONTACT</h2>
+        <br>
 
-        <p class=myfooter-text-h2>
-            <span class="glyphicon glyphicon-envelope"></span>
-            <a href="mailto:explore@2ndapproach.com.sg" target="_blank">  explore@2ndapproach.com.sg</a><br>
+        <div class="row">
+            <div class="col-sm-5">
+                <a href="#myCarousel">
+                    <img alt="2ndApproach" src="img/2ndApproach-logo-256.png" style="height:40px;margin-left: 0px;">                            </a>
+                </a>
+                <p class=myfooter-text-h1>
+                    <b>2nd Approach Methodology Pte. Ltd. </b><br>
+                </p>
+                <p class=myfooter-text-h2>
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <a href="mailto:explore@2ndapproach.com.sg" target="_blank">  explore@2ndapproach.com.sg</a><br>
 
-            <span class="glyphicon glyphicon-phone-alt"></span>
-            <a href="tel:+6568093884">  (65) 68093884</a><br>
+                    <span class="glyphicon glyphicon-phone-alt"></span>
+                    <a href="tel:+6568093884">  (65) 68093884</a><br>
 
-            <span class="glyphicon glyphicon-home"></span> 137 Market Street #06-00 Singapore 048943<br>
-            <br>
-        </p>
+                    <span class="glyphicon glyphicon-home"></span> 137 Market Street #06-00 Singapore 048943<br>
+                    <br>
 
-        <div id="googleMap" style="height:400px;width:100%;"></div>
+                    <a href="https://www.linkedin.com/company/3695369/" class="fa fa-linkedin-square" style="font-size:38px"></a>
+                </p>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Leave us a message" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <a href="#myCarousel" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-          </a>
+
+
+        <!-- <div id="googleMap" style="height:400px;width:100%;"></div> -->
+
+        <div class="row text-center mySectionHeader">
+            <a href="#myCarousel" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        </div>
     </div>
 
     <!-- Modal -->
@@ -276,7 +317,7 @@
         </div>
     </div>
 
-<script src="js/map.js"></script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>
