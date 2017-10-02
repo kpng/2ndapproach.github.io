@@ -35,6 +35,7 @@
 </head>
 
 <body>
+
     <!-- <div class="container-fluid" style="background-color:white;"> -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -100,34 +101,37 @@
     </div>
     <!-- </div> -->
 
-    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="480">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-                <a class="navbar-brand" href="#">
-                    <!-- <img alt="2ndApproach" src="assets/img/2ndApproach-logo-256.png" style="height:50%">                            </a> -->
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a data-toggle="collapse" data-target=".in" href="#myCarousel">Home</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Expertise">Expertise</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#"><span class="glyphicon glyphicon-log-in"></span> Subscribe</a>
-                    </li>
-                    <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
+    <!-- <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="480"> -->
+        <nav class="navbar navbar-inverse" data-spy="affix">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>                        
+                       </button>
+                   <a class="navbar-brand" href="#">
+                       <!-- <img alt="2ndApproach" src="assets/img/2ndApproach-logo-256.png" style="height:50%">                            </a> -->
+                   </a>
+               </div>
+               <div class="collapse navbar-collapse" id="myNavbar">
+                   <ul class="nav navbar-nav">
+                       <li class="active"><a data-toggle="collapse" data-target=".in" href="#myCarousel">Home</a></li>
+                       <li><a href="#Services">Services</a></li>
+                       <li><a href="#Expertise">Expertise</a></li>
+                       <li><a href="#Contact">Contact</a></li>
+                   </ul>
+                   <ul class="nav navbar-nav navbar-right">
+                       <!-- <li>
+                           <a href="#"><span class="glyphicon glyphicon-log-in"></span> Subscribe</a>
+                       </li> -->
+                       <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                   </ul>
+               </div>
+           </div>
+       </nav>
+
 
     <!-- Container (Services Section) -->
     <div class="container-fluid text-center myServices" id="Services">
@@ -153,7 +157,7 @@
             </div>
         </div>
         <br><br>
-        <div class="row">
+        <div class="w3-row-padding">
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-leaf"></span>
                 <h4>GREEN</h4>
@@ -220,17 +224,17 @@
     <div id="Expertise" class="container-fluid text-center bg-grey">
         <br><br>
         <h2>EXPERTISE</h2>
-        <h4>What we offer</h4>
+        <h4>What skills we bring</h4>
         <br>
 
     </div>
 
     <div class="footer" id="Contact">
         <br>
-        <h2 class="text-center mySectionHeader">CONTACT</h2>
+        <h2 class="mySectionHeader">CONTACT</h2>
         <br>
 
-        <div class="row">
+        <!-- <div class="row"> -->
             <div class="col-sm-5">
                 <a href="#myCarousel">
                     <img alt="2ndApproach" src="img/2ndApproach-logo-256.png" style="height:40px;margin-left: 0px;">                            </a>
@@ -252,26 +256,36 @@
                 </p>
             </div>
             <div class="col-sm-7">
-                <form action="https://script.google.com/macros/u/0/s/AKfycbxjqOY0Ki5LIFoT87uCF49aFV_PuWuP6xFaX7PiD5sYUfr9Umo/exec" method="post">
+                <form action="https://script.google.com/macros/s/AKfycbxDya4EZJJ1-0rFR4VdkCPJlb6iObkeS1Z97XLUOiw_1LFIyZc/exec" method="post">
                     <div class="row">
                         <div class="col-sm-12 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            <input class="form-control" id="name" name="NAME" placeholder="Name" type="text" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            <input class="form-control" id="email" name="EMAIL" placeholder="Email" type="email" required>
                         </div>
                     </div>
                     <textarea class="form-control" id="comments" name="comments" placeholder="Leave us a message" rows="5"></textarea><br>
                     <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button class="btn btn-default pull-right" type="submit">Send</button>
-                        </div>
+                        <!-- <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-right" type="submit">Send</button> -->
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-danger my-btn form-control" id="submit-id" onclick="makeThankText()">Get In Touch!</button>                   
+                                <div class="alert alert-danger alert-dismissible" hidden id="alert-id">
+                                    <button type="button" class="close" id="close-id"><span>&times;</span></button>
+                                    <p id="ackText"></p>
+                                    
+                                </div>
+                            </div>
+
+                        <!-- </div> -->
                     </div>
                 </form>
             </div>
-        </div>
+        <!-- </div> -->
 
 
 
