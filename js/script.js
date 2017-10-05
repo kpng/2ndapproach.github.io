@@ -42,10 +42,10 @@ function makeThankText(){
     var newFriendEmail="";
     var acknowText="";
 
-    newFriendName = document.getElementById("name-id").value;
-    newFriendEmail = document.getElementById("email-id").value;
+    newFriendName = document.getElementById("name").value;
+    newFriendEmail = document.getElementById("email").value;
 
-    document.getElementById("ackText").innerHTML = newFriendName + ", nice to have you as a new friend!"+"<br>"+"I shall contact you via email "+newFriendEmail ;
+    document.getElementById("ackText").innerHTML = newFriendName + ", thanks for contacting!"+"<br>"+"We shall get in touch soon via email "+newFriendEmail ;
 
     // acknowText = newFriendName + ", nice to have you as a new friend!"+"\n"+"I shall contact you via email "+newFriendEmail ;
     // alert(acknowText);

@@ -131,6 +131,16 @@ section {
       opacity: 0.7;
   }
 
+.skillslink {
+    color:blue;
+    text-decoration: underline;
+}  
+
+.skillslink:hover {
+    color: blue;
+    font-weight: bold;
+}
+
 /* Set a specific color for each brand */
 .fa-linkedin {
     background: #007bb5;
